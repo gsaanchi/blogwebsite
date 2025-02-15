@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation */
+
+.navigation {
+    margin-top:23px;
+    font-family: var(--font1);
+    /* height: 80px; */
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 34px;
+    display: flex;
+    font-weight: 800;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0px 55px;
+    font-size: 24px;
+
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0px 15px;
+    font-family: var(--font2);
+    display: flex;
+    font-weight: 600;
+}
+
+
+.nav-left ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul li a:hover {
+    color: var(--main-bg-color);
+    font-weight: 300;
+}
+
+/* content */
+
+.content {
+    height: 100%;
+    display: flex;
+    margin-top: 30px;
+    padding: 9px;
+    position: relative;
+    font-size: 14px;
+}
+.content::after{
+    content:"";
+    background-image: url("../images/gradient-japanese-architecture-temple-illustration_52683-44723.jpg");
+    width: 100%;
+    height:inherit;
+    opacity: 0.15;
+    position: absolute;
+}
+.content-left {
+    font-family: var(--font1);
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 40px;
+    z-index: 1;
+}
+
+.content-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+
+.content-right img {
+    height: 255px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* home-articles */
+.home-articles{
+    /* background-color: rgb(244, 199, 217,0.2); */
+    padding:20px;
+    padding-top:20px;
+    font-size:medium;
+    position: relative;
+}
+.year-box{
+    position: absolute;
+    width: 234px;
+    height: 155px;
+    /* background-color: aquamarine; */
+    top: 100px;
+    right: 200px;
+    font-size: 18px;
+}
+.year-box div{
+    margin:12px 0px;
+}
+.home-article{
+    display:flex;
+    margin:40px;
+    font-size:small;
+}
+
+.home-article-content{
+    align-self: center;
+    padding: 0px 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-article-img img{
+    height: 175px;
+}
+
+/* .home-articles{
+    
+} */
+/* form */
+.form-input{
+    padding: 0px 5px;
+    padding-top: 3px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: var(--font1);
+}
+
+.form-box input, textarea{
+    width: 44vw;
+    padding: 10px 6px;
+    margin: 7px 0px;
+}
+
+/* footer */
+/* .footer {
+    height: 38px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: small;
+    width:100%;
+    font-weight: 500;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+} */
+
+.footer {
+    height: 50px; /* Increased height for better visibility */
+    background: var(--main-bg-color); /* Gradient inspired by the uploaded image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF; /* White text for contrast */
+    font-size: 0.9rem; /* Slightly larger font for readability */
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+.footer a {
+    color: #FFFFFF; /* Ensure links are visible */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Highlight links on hover */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin for cleaner look */
+    padding: 0;
+}

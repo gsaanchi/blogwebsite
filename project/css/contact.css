@@ -1,0 +1,29 @@
+.contact-content {
+    height: 80vh;
+    display: flex;
+    margin-top: 30px;
+    padding: 9px;
+    position: relative;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.contact-content::after{
+    content:"";
+    background-image: url("../images/gradient-japanese-architecture-temple-illustration_52683-44723.jpg");
+    width: 100%;
+    height:inherit;
+    opacity: 0.15;
+    position: absolute;
+    z-index: -1;
+}
+
+.contact-form{
+    padding: 0px 5px;
+    padding-top: 3px;
+    font-size: 16px;
+    /* border: 2px solid black; */
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: var(--font1);
+}
